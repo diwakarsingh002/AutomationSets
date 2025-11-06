@@ -1,0 +1,23 @@
+{
+  "name": "confluence-test-counter",
+  "version": "1.0.0",
+  "description": "Read Confluence pages and count Unit Tests",
+  "main": "confluence_reader.js",
+  "type": "module",
+  "scripts": {
+    "start": "node confluence_reader.js",
+    "example": "node run_example.js"
+  },
+  "keywords": [
+    "confluence",
+    "test-counting",
+    "atlassian"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  }
+}
+
