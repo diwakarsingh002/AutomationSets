@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Component_1
+  title: 'TEST COMP '
+  description: TESTING
+  tags:
+    - data-platform
+spec:
+  owner: default/acbu_group
+  lifecycle: development
+  type: service
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  fullAccess: []
+  limitedAccess: []
+  blockedAccess: []
