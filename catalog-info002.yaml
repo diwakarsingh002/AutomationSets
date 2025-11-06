@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Component_1
+  title: TEST
+  description: asjfjalfhasf
+  tags:
+    - mbb-1.5
+spec:
+  owner: default/acbu_group
+  lifecycle: experimental
+  type: library
+  providesApis: []
+  consumesApis: []
+  dependsOn: []
+  dependencyOf: []
+  fullAccess: []
+  limitedAccess: []
+  blockedAccess: []
