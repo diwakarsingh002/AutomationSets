@@ -1,0 +1,91 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Component_OnBoarding
+  title: TEST COMP NEW ONBOARDING
+  description: TESTING
+  tags:
+    - mbb-1.5
+  links:
+    - icon: leanix
+      title: Lean IX
+      url: https://qa.developer.cariad.digital/create-catalog
+spec:
+  owner: default/acbu_device_group
+  lifecycle: experimental
+  type: module
+  system: default/SPR
+  subcomponentOf: default/t2-1-apps-list
+  providesApis:
+    - default/4a490838-2933-4508-8f22-8baaddf571ce
+  consumesApis:
+    - default/4a490838-2933-4508-8f22-8baaddf571ce
+  dependsOn:
+    - component:default/api-guardrails
+  dependencyOf:
+    - component:default/about-my-car-fe
+  fullAccess:
+    - test@xyz.com
+  limitedAccess: []
+  blockedAccess: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: API_OnBoarding
+  title: TEST API NEW ONBOARDING
+  description: 'TESTING '
+  tags:
+    - mbb-1.5
+  links:
+    - icon: jira
+      title: Jira
+      url: https://qa.developer.cariad.digital/create-catalog
+spec:
+  owner: default/acbu_device_group
+  lifecycle: development
+  type: soap
+  definition:
+    $text: cariad-dxp/external-entities/edit/main/catalog-info-TEST.yaml
+  system: default/Component_1
+  fullAccess:
+    - TEST@xuz.com
+  limitedAccess: []
+  blockedAccess: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: System_OnBoarding
+  title: TEST SYSTEM NEW ONBOARDING
+  description: TESTING
+  tags:
+    - mbb-1.5
+spec:
+  owner: default/acbu_group
+  lifecycle: development
+  type: service
+  fullAccess: []
+  limitedAccess: []
+  blockedAccess: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: Resource_OnBoarding
+  title: TEST RESOURCE NEW ONBOARDING
+  description: TESTING
+  tags:
+    - mbb-1.5
+spec:
+  owner: default/acbu_device_group
+  lifecycle: development
+  type: network
+  dependsOn: []
+  dependencyOf: []
+  fullAccess: []
+  limitedAccess: []
+  blockedAccess: []
